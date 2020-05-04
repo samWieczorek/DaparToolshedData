@@ -6,7 +6,7 @@ data.file <- system.file("extdata", "Exp1_R2_prot.txt", package="DAPARdata2")
 data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
 sample.file <- system.file("extdata", "samples_Exp1_R2.txt", package="DAPARdata2")
-sample <- read.table(metadataFile, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
+sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
 Exp1_R2_prot <- createFeatures(data = data, 
                                  sample = sample, 
