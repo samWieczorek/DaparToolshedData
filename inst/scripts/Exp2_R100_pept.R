@@ -1,4 +1,4 @@
-library("Features")
+library("QFeatures")
 library("DAPAR2")
 
 data.file <- system.file("extdata", "Exp2_R100_pept.txt", package="DAPARdata2")
@@ -7,12 +7,12 @@ data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactor
 sample.file <- system.file("extdata", "samples_Exp2_R100.txt", package="DAPARdata2")
 sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
-Exp2_R100_pept <- createFeatures(data = data, 
-                                 sample = sample, 
-                                 indExpData = c(1:6), 
-                                 keyId = 'Sequence', 
-                                 namesOrigin = colnames(data)[43:48],
-                                 logTransform=TRUE, 
-                                 forceNA=TRUE,
-                                 typeOfData = "peptide",
-                                 parentProtId= "Protein_group_IDs")
+Exp2_R100_pept <- createQFeatures(data = data, 
+                                  sample = sample, 
+                                  indExpData = c(1:6), 
+                                  keyId = 'Sequence', 
+                                  namesOrigin = colnames(data)[43:48],
+                                  logTransform=TRUE, 
+                                  forceNA=TRUE,
+                                  typeOfData = "peptide",
+                                  parentProtId= "Protein_group_IDs")

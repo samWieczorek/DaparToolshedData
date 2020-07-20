@@ -17,9 +17,10 @@ Description: Mass-spectrometry based UPS proteomics data sets from Ramus C,
             quantitative experiments. Proteomics, 16(1), 29-32.
 Depends: R (>= 3.5)
 Suggests: DAPAR2
-Imports: utils, knitr, Features
+Imports: utils, knitr, QFeatures
 License: GPL-2
 biocViews: ExperimentData, MassSpectrometryData
 NeedsCompilation: no
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
+Encoding: UTF-8
