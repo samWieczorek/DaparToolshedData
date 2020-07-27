@@ -11,14 +11,14 @@ for (i in allScripts){
 
 }
 
-save(Exp1_R2_pept, file='Exp1_R2_pept.RData')
-save(Exp1_R2_prot, file='Exp1_R2_prot.RData')
-save(Exp1_R25_pept, file='Exp1_R25_pept.RData')
-save(Exp1_R25_prot, file='Exp1_R25_prot.RData')
+save(Exp1_R2_pept, file='Exp1_R2_pept.RData', compress='xz')
+save(Exp1_R2_prot, file='Exp1_R2_prot.RData', compress='xz')
+save(Exp1_R25_pept, file='Exp1_R25_pept.RData', compress='xz')
+save(Exp1_R25_prot, file='Exp1_R25_prot.RData', compress='xz')
 
-save(Exp2_R2_pept, file='Exp2_R2_pept.RData')
-save(Exp2_R2_prot, file='Exp2_R2_prot.RData')
-save(Exp2_R10_pept, file='Exp2_R10_pept.RData')
-save(Exp2_R10_prot, file='Exp2_R10_prot.RData')
-save(Exp2_R100_pept, file='Exp2_R100_pept.RData')
-save(Exp2_R100_prot, file='Exp2_R100_prot.RData')
+save(Exp2_R2_pept, file='Exp2_R2_pept.RData', compress='xz')
+save(Exp2_R2_prot, file='Exp2_R2_prot.RData', compress='xz')
+save(Exp2_R10_pept, file='Exp2_R10_pept.RData', compress='xz')
+save(Exp2_R10_prot, file='Exp2_R10_prot.RData', compress='xz')
+save(Exp2_R100_pept, file='Exp2_R100_pept.RData', compress='xz')
+save(Exp2_R100_prot, file='Exp2_R100_prot.RData', compress='xz')
