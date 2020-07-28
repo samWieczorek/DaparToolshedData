@@ -5,7 +5,7 @@
 \alias{Exp2_R10_prot}
 \title{Exp2_R10_prot dataset}
 \format{
-An object of class \code{\link{QFeatures}} related to proteins
+An object of class \link{QFeatures} related to proteins
 quantification. It contains 6 samples divided into two conditions
 (10 fmol and 100 fmol) and 948 proteins.
 
@@ -21,7 +21,7 @@ few informations about the samples.
 data(Exp2_R10_prot)
 }
 \value{
-An object of class \code{\link{QFeatures}} related to proteins
+An object of class \link{QFeatures} related to proteins
 quantification.
 }
 \description{
@@ -38,7 +38,7 @@ Three technical replicates were acquired for each condition.
 
 
 The dataset is either available as a CSV file 
-(see inst/extdata/Exp2_R10_prot.txt), or as a \code{\link{QFeatures}} structure 
+(see inst/extdata/Exp2_R10_prot.txt), or as a \link{QFeatures} structure 
 (Exp2_R10_prot.ft). In the latter case, the quantitative data are those of 
 the raw intensities.
 }

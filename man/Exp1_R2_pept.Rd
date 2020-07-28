@@ -5,7 +5,7 @@
 \alias{Exp1_R2_pept}
 \title{Exp1_R2_pept dataset}
 \format{
-An object of class \code{\link{QFeatures}} related to peptide
+An object of class \link{QFeatures} related to peptide
 quantification. It contains 6 samples divided into two conditions
 (10fmol and 5fmol) and 14048 peptides.
 
@@ -21,7 +21,7 @@ few informations about the samples.
 data(Exp1_R2_pept)
 }
 \value{
-An object of class \code{\link{QFeatures}} related to peptides
+An object of class \link{QFeatures} related to peptides
 quantification.
 }
 \description{
@@ -37,7 +37,7 @@ before mass spectrometry analyses. This results in a concentration ratio of 2.
 Three technical replicates were acquired for each condition.
 
 The dataset is either available as a CSV file (see 
-inst/extdata/Exp1_R2_pept.txt), or as a \code{\link{QFeatures}} structure 
+inst/extdata/Exp1_R2_pept.txt), or as a \link{QFeatures} structure 
 (Exp1_R2_pept). In the latter case, the quantitative data are those of the 
 raw intensities.
 }

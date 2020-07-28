@@ -3,7 +3,7 @@ Type: Package
 Title: Data accompanying the DAPAR and Prostar packages
 Version: 2.2
 Date: 2020-06-4
-Author: Samuel Wieczorek and Florence Combes
+Author: Samuel Wieczorek and Enora Fremy
 Maintainer: Samuel Wieczorek <samuel.wieczorek@cea.fr>
 Description: Mass-spectrometry based UPS proteomics data sets from Ramus C, 
             Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D, 
@@ -15,9 +15,11 @@ Description: Mass-spectrometry based UPS proteomics data sets from Ramus C,
             Burger, T. (2016). Calibration plot for proteomics: A graphical 
             tool to visually check the assumptions underlying FDR control in 
             quantitative experiments. Proteomics, 16(1), 29-32.
-Depends: R (>= 3.5)
-Suggests: DAPAR2
-Imports: utils, knitr, QFeatures
+Depends: R (>= 4.0)
+Imports:
+  utils,
+  DAPAR2,
+  QFeatures
 License: GPL-2
 biocViews: ExperimentData, MassSpectrometryData
 NeedsCompilation: no

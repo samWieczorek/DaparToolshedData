@@ -5,7 +5,7 @@
 \alias{Exp1_R25_pept}
 \title{Exp1_R25_pept dataset}
 \format{
-An object of class \code{\link{QFeatures}} related to peptide
+An object of class \link{QFeatures} related to peptide
 quantification. It contains 6 samples divided into two conditions
 (25fmol and 10fmol) and 13918 peptides.
 
@@ -21,7 +21,7 @@ few informations about the samples.
 data(Exp1_R25_pept)
 }
 \value{
-An object of class \code{\link{QFeatures}} related to peptides
+An object of class \link{QFeatures} related to peptides
 quantification.
 }
 \description{
@@ -38,7 +38,7 @@ Three technical replicates were
 acquired for each condition.
 
 The dataset is either available as a CSV file (see 
-inst/extdata/Exp1_R25_pept.txt), or as a \code{\link{QFeatures}} structure 
+inst/extdata/Exp1_R25_pept.txt), or as a \link{QFeatures} structure 
 (Exp1_R25_pept). In the latter case, the quantitative data are those of the 
 raw intensities.
 }

@@ -16,13 +16,13 @@
 #' for each condition.
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp1_R25_prot.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp1_R25_prot.txt), or as a \link{QFeatures} structure 
 #' (Exp1_R25_prot.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp1_R25_prot)
-#' @return An object of class \code{\link{QFeatures}} related to proteins
+#' @return An object of class \link{QFeatures} related to proteins
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to proteins
+#' @format An object of class \link{QFeatures} related to proteins
 #' quantification. It contains 6 samples divided into two conditions
 #' (25 fmol and 10 fmol) and 2384 proteins.
 #' 
@@ -45,6 +45,9 @@
 #' Proteomics, 16(1), 29-32.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -66,13 +69,13 @@ NULL
 #' acquired for each condition.
 #' 
 #' The dataset is either available as a CSV file (see 
-#' inst/extdata/Exp1_R25_pept.txt), or as a \code{\link{QFeatures}} structure 
+#' inst/extdata/Exp1_R25_pept.txt), or as a \link{QFeatures} structure 
 #' (Exp1_R25_pept). In the latter case, the quantitative data are those of the 
 #' raw intensities.
 #' @usage data(Exp1_R25_pept)
-#' @return An object of class \code{\link{QFeatures}} related to peptides
+#' @return An object of class \link{QFeatures} related to peptides
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to peptide
+#' @format An object of class \link{QFeatures} related to peptide
 #' quantification. It contains 6 samples divided into two conditions
 #' (25fmol and 10fmol) and 13918 peptides.
 #' 
@@ -95,6 +98,9 @@ NULL
 #' experiments. Proteomics, 16(1), 29-32.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -119,13 +125,13 @@ NULL
 #' for each condition.
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp1_R2_prot.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp1_R2_prot.txt), or as a \link{QFeatures} structure 
 #' (Exp1_R2_prot.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp1_R2_prot)
-#' @return An object of class \code{\link{QFeatures}} related to proteins
+#' @return An object of class \link{QFeatures} related to proteins
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to proteins
+#' @format An object of class \link{QFeatures} related to proteins
 #' quantification. It contains 6 samples divided into two conditions
 #' (10fmol and 5fmol) and 2394 proteins.
 #' 
@@ -148,6 +154,9 @@ NULL
 #' Proteomics, 16(1), 29-32.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -168,13 +177,13 @@ NULL
 #' Three technical replicates were acquired for each condition.
 #' 
 #' The dataset is either available as a CSV file (see 
-#' inst/extdata/Exp1_R2_pept.txt), or as a \code{\link{QFeatures}} structure 
+#' inst/extdata/Exp1_R2_pept.txt), or as a \link{QFeatures} structure 
 #' (Exp1_R2_pept). In the latter case, the quantitative data are those of the 
 #' raw intensities.
 #' @usage data(Exp1_R2_pept)
-#' @return An object of class \code{\link{QFeatures}} related to peptides
+#' @return An object of class \link{QFeatures} related to peptides
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to peptide
+#' @format An object of class \link{QFeatures} related to peptide
 #' quantification. It contains 6 samples divided into two conditions
 #' (10fmol and 5fmol) and 14048 peptides.
 #' 
@@ -197,6 +206,9 @@ NULL
 #' experiments. Proteomics, 16(1), 29-32.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 #################################################################################
@@ -221,13 +233,13 @@ NULL
 #' 
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R2_prot.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R2_prot.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R2_prot.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R2_prot)
-#' @return An object of class \code{\link{QFeatures}} related to proteins
+#' @return An object of class \link{QFeatures} related to proteins
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to proteins
+#' @format An object of class \link{QFeatures} related to proteins
 #' quantification. It contains 6 samples divided into two conditions
 #' (25 fmol and 50 fmol) and 948 proteins.
 #' 
@@ -247,6 +259,9 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -274,13 +289,13 @@ NULL
 #' Three technical replicates were acquired for each condition.
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R2_pept.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R2_pept.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R2_pept.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R2_pept)
-#' @return An object of class \code{\link{QFeatures}} related to peptides
+#' @return An object of class \link{QFeatures} related to peptides
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to peptides
+#' @format An object of class \link{QFeatures} related to peptides
 #' quantification. It contains 6 samples divided into two conditions
 #' (25fmol and 50fmol) and 5390 peptides.
 #' 
@@ -300,6 +315,9 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -326,13 +344,13 @@ NULL
 #' 
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R10_prot.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R10_prot.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R10_prot.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R10_prot)
-#' @return An object of class \code{\link{QFeatures}} related to proteins
+#' @return An object of class \link{QFeatures} related to proteins
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to proteins
+#' @format An object of class \link{QFeatures} related to proteins
 #' quantification. It contains 6 samples divided into two conditions
 #' (10 fmol and 100 fmol) and 948 proteins.
 #' 
@@ -352,6 +370,9 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -380,13 +401,13 @@ NULL
 #' 
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R10_pept.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R10_pept.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R10_pept.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R10_pept)
-#' @return An object of class \code{\link{QFeatures}} related to peptides
+#' @return An object of class \link{QFeatures} related to peptides
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to peptides
+#' @format An object of class \link{QFeatures} related to peptides
 #' quantification. It contains 6 samples divided into two conditions
 #' (10 fmol and 100 fmol) and 5633 peptides.
 #' 
@@ -406,6 +427,9 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -435,13 +459,13 @@ NULL
 #' 
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R100_prot.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R100_prot.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R100_prot.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R100_prot)
-#' @return An object of class \code{\link{QFeatures}} related to proteins
+#' @return An object of class \link{QFeatures} related to proteins
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to proteins
+#' @format An object of class \link{QFeatures} related to proteins
 #' quantification. It contains 6 samples divided into two conditions
 #' (1 fmol and 100 fmol) and 923 proteins.
 #' 
@@ -461,6 +485,9 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL
 
 
@@ -489,13 +516,13 @@ NULL
 #' 
 #' 
 #' The dataset is either available as a CSV file 
-#' (see inst/extdata/Exp2_R100_pept.txt), or as a \code{\link{QFeatures}} structure 
+#' (see inst/extdata/Exp2_R100_pept.txt), or as a \link{QFeatures} structure 
 #' (Exp2_R100_peptt.ft). In the latter case, the quantitative data are those of 
 #' the raw intensities.
 #' @usage data(Exp2_R100_pept)
-#' @return An object of class \code{\link{QFeatures}} related to peptides
+#' @return An object of class \link{QFeatures} related to peptides
 #' quantification.
-#' @format An object of class \code{\link{QFeatures}} related to peptides
+#' @format An object of class \link{QFeatures} related to peptides
 #' quantification. It contains 6 samples divided into two conditions
 #' (1 fmol and 100 fmol) and 5684 peptides.
 #' 
@@ -515,4 +542,7 @@ NULL
 #' and statistical methods. Data Brief. 2015 Dec 17;6:286-94.PMID: 26862574.
 #' 
 #' @keywords datasets
+#' 
+#' @import QFeatures
+#' 
 NULL

@@ -1,14 +1,25 @@
+#' @title xxxxxx
+#' 
+#' @description xxx
+#' 
+#' @return xxx 
+#' 
+#' @author Enora Fremy, Samuel Wieczorek
+#' 
+#' @importFrom DAPAR2 createQFeatures
+#' @importFrom utils read.table
+#' 
+#' @export
+#' 
 
-library("QFeatures")
-library("DAPAR2")
-
+create_Exp2_R100_prot <- function(){
 data.file <- system.file("extdata", "Exp2_R100_prot.txt", package="DAPARdata2")
 data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
 sample.file <- system.file("extdata", "samples_Exp2_R100.txt", package="DAPARdata2")
 sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
-Exp2_R100_prot <- createQFeatures(data = data, 
+Exp2_R100_prot <- DAPAR2::createQFeatures(data = data, 
                                   sample = sample, 
                                   indExpData = c(1:6), 
                                   keyId = "Majority_protein_IDs", 
@@ -17,3 +28,8 @@ Exp2_R100_prot <- createQFeatures(data = data,
                                   forceNA=TRUE,
                                   typeOfData = "protein",
                                   parentProtId= NULL)
+save(Exp2_R100_prot, file='Exp2_R100_prot.RData', compress='xz')
+saveRDS(get(Exp2_R100_prot), file=paste0(Exp2_R100_prot, '.ft'))
+return(Exp2_R100_prot)
+
+}
