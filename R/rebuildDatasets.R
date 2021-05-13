@@ -7,14 +7,19 @@
 #' @author Enora Fremy, Samuel Wieczorek
 #' 
 #' @import DAPAR2
+#' @import svMisc
 #' 
 
 rebuild_all_datasets <- function(){
   
 ll <- DAPARdata2()$results[,'Item']
-for (i in ll){
-  cat(paste0('Building dataset ', i, '\n'))
-  do.call(paste0('create_', i), list())
+n <- length(ll)
+for (i in 1:n){
+  progress(100*i/n, progress.bar=TRUE)
+  cat(paste0('Building dataset ', ll[i], ' ...\n'))
+  do.call(paste0('create_', ll[i]), list())
+  flush.console()
   }
 
 }
+

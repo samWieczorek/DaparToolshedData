@@ -23,12 +23,15 @@ Exp1_R2_prot <- DAPAR2::createQFeatures(data = data,
                                 sample = sample, 
                                 indExpData = c(49:54), 
                                 keyId = "Majority_protein_IDs", 
-                                namesOrigin = c(36:41),
+                                indexForMetacell = 36:41,
                                 logTransform=TRUE, 
                                 forceNA=TRUE,
                                 typeOfData = "protein",
-                                parentProtId= NULL)
-save(Exp1_R2_prot, file='Exp1_R2_prot.RData', compress='xz')
-saveRDS(get(Exp1_R2_prot), file=paste0(Exp1_R2_prot, '.ft'))
-return(Exp1_R2_prot)
+                                parentProtId= NULL,
+                                analysis='foo',
+                                processes = NULL,
+                                pipelineType = NULL,
+                                software = 'maxquant')
+save(Exp1_R2_prot, file = 'data/Exp1_R2_prot.RData', compress='xz')
+saveRDS(Exp1_R2_prot, file = 'inst/extdata/Exp1_R2_prot.ft')
 }

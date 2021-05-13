@@ -16,5 +16,6 @@ packageStartupMessage(msg)
 #' DAPARdata2()
 #' @importFrom utils data
 #' @export
+#' 
 DAPARdata2 <- function() {
 data(package = "DAPARdata2")}
