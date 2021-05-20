@@ -1,8 +1,8 @@
 Package: DAPARdata2
 Type: Package
 Title: Data accompanying the DAPAR and Prostar packages
-Version: 2.3
-Date: 2021-05-13
+Version: 2.4
+Date: 2021-05-20
 Author: Samuel Wieczorek and Enora Fremy
 Maintainer: Samuel Wieczorek <samuel.wieczorek@cea.fr>
 Description: Mass-spectrometry based UPS proteomics data sets from Ramus C, 
