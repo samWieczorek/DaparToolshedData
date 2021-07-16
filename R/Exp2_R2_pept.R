@@ -6,7 +6,7 @@
 #' 
 #' @author Enora Fremy, Samuel Wieczorek
 #' 
-#' @importFrom DAPAR2 createQFeatures
+#' @importFrom Dapar2 createQFeatures
 #' @importFrom utils read.table
 #' 
 #' @export
@@ -19,19 +19,20 @@ data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactor
 sample.file <- system.file("extdata", "samples_Exp2_R2.txt", package="DAPARdata2")
 sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
-Exp2_R2_pept <- DAPAR2::createQFeatures(data = data, 
+Exp2_R2_pept <- createQFeatures(data = data, 
                                 sample = sample, 
-                                indExpData = c(1:6), 
+                                indQData = 1:6, 
                                 keyId = 'Sequence', 
-                                indexForMetacell = 49:54,
+                                indQMetadata = 49:54,
                                 logTransform = TRUE, 
                                 forceNA = TRUE,
-                                typeOfData = "peptide",
+                                typeDataset = "peptide",
                                 parentProtId= "Protein_group_IDs",
                                 analysis = 'foo',
                                 processes = NULL,
-                                pipelineType = NULL,
+                                typePipeline = NULL,
                                 software = 'maxquant')
+
 save(Exp2_R2_pept, file = 'data/Exp2_R2_pept.RData', compress='xz')
 saveRDS(Exp2_R2_pept, file = 'inst/extdata/Exp2_R2_pept.ft')
 
